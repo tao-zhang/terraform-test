@@ -32,4 +32,9 @@ variable "dev_box" {
     memory_gb      = "16"
     disk_gb        = "200"
   }
+
+  validation {
+    condition     = contains(["public", "internal", "confidential", "restricted"], var.dev_box.classification)
+    error_message = "classification must be one of: public, internal, confidential, restricted."
+  }
 }

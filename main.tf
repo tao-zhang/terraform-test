@@ -28,7 +28,7 @@ resource "terraform_data" "dev_box" {
   }
 }
 
-# Dummy attached disk, encrypted only for sensitive classifications.
+# Dummy attached disk.
 resource "terraform_data" "data_disk" {
   input = {
     name        = "${var.dev_box.id}-data"
