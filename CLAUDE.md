@@ -8,15 +8,7 @@ A Terraform sandbox that simulates provisioning a "virtual developer box" withou
 
 ## Commands
 
-```sh
-terraform init        # install providers (pinned via .terraform.lock.hcl)
-terraform plan        # preview changes
-terraform apply       # apply (safe: creates no real infrastructure)
-terraform validate    # check configuration
-terraform fmt         # format .tf files
-```
-
-There are no tests or linters beyond `terraform validate` and `terraform fmt`.
+Standard Terraform workflow. There are no tests or linters beyond `terraform validate` and `terraform fmt`.
 
 ## Structure
 
